@@ -19,21 +19,23 @@ body {
 .open {
     border: none;
     padding: 15px 40px;
-    cursor:crosshair ;
+    cursor:pointer ;
     outline: none;
     color: white;
     background: rgba(0, 128, 0, 0.651);
     border-radius: 10px;
     font-size: 15px;
-    
-    
+   
 }
+
+
+
 
 .modal-container {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.048);
+    background-color: rgba(199, 236, 204, 0.726);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -41,9 +43,11 @@ body {
     align-items: center;
     flex-direction: column;
     opacity: 0;
-
-
+    pointer-events: none;
+   
 }
+
+
 
 .modal {
     width: 600px;
@@ -51,19 +55,28 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     padding: 30px;
-    opacity: 1;
+ 
     -webkit-box-shadow: 0px 5px 15px 0px #000000;
     box-shadow: 0px 5px 15px 0px #000000;
+   
 }
+
+
 
 .modal p {
     margin-bottom: 30px;
     line-height: 1.6;
-
 }
+
+
+
 
 .show {
     opacity: 1;
+    pointer-events: auto;
+    transition: 0.2s ease-in-out;
+ 
+    
 }
